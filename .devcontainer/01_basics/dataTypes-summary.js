@@ -17,12 +17,12 @@ let userEmail;
 const id = Symbol('123')
 const anotherId = Symbol('123')
 
-console.log(typeof score);
-console.log(typeof scoreValue);
-console.log(typeof isLoggedIn);
-console.log(typeof outsideTemp);
-console.log(typeof userEmail);
-console.log(typeof anotherId);
+// console.log(typeof score);
+// console.log(typeof scoreValue);
+// console.log(typeof isLoggedIn);
+// console.log(typeof outsideTemp);
+// console.log(typeof userEmail);
+// console.log(typeof anotherId);
 
 
 const bigNumber = 132412346345678334645787863242353464545634342342n
@@ -42,6 +42,30 @@ const myFunction = function(){
     console.log("Hello World");
 }
 
-console.log(typeof heroes);
-console.log(typeof myObject);
-console.log(typeof myFunction);
+// console.log(typeof heroes);
+// console.log(typeof myObject);
+// console.log(typeof myFunction);
+
+
+// ++++++++++ ##### Memory ##### ++++++++++
+// 2 Types of Memories: Stack(Primitive) and Heap(Non-Primitive)
+
+let myPetName = "Manu"
+let myAnotherPetName = myPetName
+myAnotherPetName = "Manio"
+
+console.log(myPetName);
+console.log(myAnotherPetName);
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@icici"
+}
+
+let userTwo = userOne
+
+userTwo.email = "Manish@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+console.log(userTwo.upi);
