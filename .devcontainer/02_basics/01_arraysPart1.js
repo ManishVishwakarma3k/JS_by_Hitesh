@@ -1,11 +1,12 @@
 // Array Declaration
-const myFirstArray = [0, 1, 2, 3, 4, 5]
-const myHeroes = ["Ironman", "CapAmerica", "Thor", "Wanda", 1, 2, 3]
+//Array-copy operations create shallow copies(A copy whose properties share the same references(HEAP))
+const myFirstArray = [0, 1, 2, 3, 4, 5]//Arrays are zero-indexed
+const myHeroes = ["Ironman", "CapAmerica", "Thor", "Wanda", 1, 2, 3]//Arrays are resizeable
 
 //Another way of declaring array
 const mySecondArray = new Array("Spiderman", "Hawkeye", "agentRomanov", "blackPanther")
 
-// console.log(myFirstArray);
+// console.log(myFirstArray.length);
 // console.log(myHeroes);
 // console.log(mySecondArray);
 
@@ -21,7 +22,7 @@ myFirstArray.shift()
 // console.log(myFirstArray.indexOf(3));
 // console.log(myFirstArray);
 
-// const newArray = myFirstArray.join()
+// const newArray = myFirstArray.join() //Binds and Converts Array to string into comma seperate values
 
 // console.log(typeof myFirstArray);
 // console.log(typeof newArray);
@@ -30,12 +31,12 @@ myFirstArray.shift()
 
 console.log("A ", myFirstArray);
 
-const mySlicedArray = myFirstArray.slice(0, 3)
+const mySlicedArray = myFirstArray.slice(1, 3)
 console.log(mySlicedArray);
 
 console.log("B ", myFirstArray);
 
-const mySplicedArray = myFirstArray.splice(0, 3)
+const mySplicedArray = myFirstArray.splice(1, 3)
 console.log(mySplicedArray);
 
 console.log("C ", myFirstArray);
