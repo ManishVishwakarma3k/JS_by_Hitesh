@@ -50,10 +50,33 @@ const serverReceivedUsers = [
 
 // console.log(serverReceivedUsers[2].email);
 
-console.log(snapUser);
+// console.log(snapUser);
 
-console.log(Object.keys(snapUser));
-console.log(Object.values(snapUser));
-console.log(Object.entries(snapUser));
+// console.log(Object.keys(snapUser));
+// console.log(Object.values(snapUser));
+// console.log(Object.entries(snapUser));
 
-console.log(snapUser.hasOwnProperty("username"));
+// console.log(snapUser.hasOwnProperty("username"));
+
+const codeLearner = {
+    Firstname: "Zany",
+    Lastname: "Orbit",
+    Email: "zanyorbit@yahoo.com",
+    RollNo: 169
+}
+
+// console.log(codeLearner.Lastname);
+
+const {RollNo} = codeLearner //If you want to access Rollno instead of codeLearner.RollNo everytime
+console.log(RollNo);
+
+const {Email: Mail} = codeLearner //We can also access by other assigned name link "Mail"
+console.log(Mail);
+
+// JSON Talk and structure
+
+// {
+//     "Stark": "Ironman",
+//     "OdinSon": "Thor",
+//     "America": "Captian"
+// }
