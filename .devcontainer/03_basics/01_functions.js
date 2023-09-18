@@ -55,3 +55,13 @@ console.log(handleUser({
     username: "Prajwal",
     bookprice: "10999"
 }));
+
+const randomPriceArray = [199, 299, 999, 4999, 11999]
+
+function handleFifthValue(anyArray){
+    return anyArray[4]
+}
+
+console.log(handleFifthValue(randomPriceArray));
+
+console.log(handleFifthValue([199, 299, 999, 4999, 11999]));
