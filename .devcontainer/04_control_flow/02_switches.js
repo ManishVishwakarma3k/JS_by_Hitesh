@@ -1,4 +1,4 @@
-// switch (key) { // Syntax od switch case
+// switch (key) { // Syntax of switch case. Used for multiple conditions
 //     case value:
         
 //         break;
@@ -9,10 +9,10 @@
 
 // const randomNumber = 5
 
-// switch (randomNumber) {
+// switch (randomNumber) { // Checks for key, key is the value that needs to be checked everytime here randomNumber
 //     case 1:
 //         console.log(`Value match the random number between 1 to 5 at ${randomNumber}`);
-//         break;
+//         break; // if break is missing then all the code after matchcase is executed except default
 //     case 2:
 //         console.log(`Value match the random number between 1 to 5 at ${randomNumber}`);
 //         break;
@@ -26,7 +26,7 @@
 //         console.log(`Value match the random number between 1 to 5 at ${randomNumber}`);
 //         break;
 
-//     default:
+//     default: //executes if none of the conditions match. Acts like else in if-else
 //         console.log(`Value doesn't match the random number between the range 1 to 5`);
 //         break;
 // }
@@ -48,3 +48,5 @@ switch (randomMonth) {
         console.log(`Value not within first quater of the year i.e. from Jan to Mar`);
         break;
 }
+
+// All the conditional statements up until now work on 2 values i.e. T/F

@@ -1,3 +1,4 @@
+// Values that are assumed to be true or false are called truthy or falsy values
 const userEmail = ' ' // Truthy Value
 if (userEmail) {
     // console.log("User email address was received from server.");
@@ -8,14 +9,14 @@ if (userEmail) {
 // Falsy Values: false, 0, -0, BigInt 0n, "", null, undefined, NaN
 // Truthy Values: true, "0", 'false', " ", [], {}, function(){}
 
-if (userEmail.length === 0){
+if (userEmail.length === 0){ // Calling length property of array
     // console.log("Array is Empty");
     // console.log(typeof(userEmail));
 }
 
 const emptyObject = {}
-
-if (Object.keys(emptyObject).length === 0){
+// Call Object and end of day creates an array of keys == Object.keys(emptyObject) when passed with object
+if (Object.keys(emptyObject).length === 0){ //Creates an array which can be accessed by length keyword 
     // console.log("Object is Empty");
     // console.log(typeof(emptyObject));
 }
